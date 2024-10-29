@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-expressjs",
+  "version": "1.0.0",
+  "description": "< Express />",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node src/server.js"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paulohenriquesp/ExpressJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paulohenriquesp/ExpressJS/issues"
+  },
+  "homepage": "https://github.com/Paulohenriquesp/ExpressJS#readme",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "express": "^4.21.1",
+    "express-async-errors": "^3.1.1",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.7",
+    "sqlite3": "^5.1.7",
+    "yup": "^1.4.0"
+  }
+}
