@@ -1,7 +1,7 @@
 import knex from "knex";
 
 const config = {
-  cliente: "sqlite3",
+  client: "sqlite3",
   connection: {
     filename: "./locatech.sqlite",
   },
