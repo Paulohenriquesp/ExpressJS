@@ -20,9 +20,7 @@ export const createVeiculo = async (veiculo) => {
 };
 
 export const updateVeiculo = async (id, veiculo) => {
-  const [id] = await db("veiculos").where({ id }).update(veiculo);
-
-  return { id, ...veiculo };
+  const [idUpdate] = await db("veiculos").where({ id }).update(veiculo);
 };
 
 export const deleteVeiculo = async (id) => {
