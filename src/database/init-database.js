@@ -2,7 +2,7 @@ import { existsSync } from "fs";
 
 import db from "./index.js";
 
-const initDatabase = async () => {
+export const initDatabase = async () => {
   if (!existsSync("./locatech.sqlite")) {
     console.log("Criando o banco de dados!");
 
@@ -11,6 +11,7 @@ const initDatabase = async () => {
       table.increments("id").primary();
       table.string("modelo").notNullable();
       table.string("marca").notNullable();
+      table.string("placa").notNullable();
       table.string("ano").notNullable();
       table.string("cor").notNullable();
       table.float("valor_diaria").unsigned().notNullable();
